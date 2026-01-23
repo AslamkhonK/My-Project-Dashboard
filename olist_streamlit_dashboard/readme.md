@@ -1,10 +1,10 @@
 # Olist Streamlit Dashboard
 
 Интерактивный дашборд продаж на базе DuckDB + Streamlit + Plotly.  
-Автор: <Aslamkhon Kaniev> (GitHub: <>)
+Автор: <Aslamkhon Kaniev> (GitHub: <https://github.com/AslamkhonK/My-Project-Dashboard>)
 
 ## Описание датасета
-Используется публичный датасет Olist Brazilian E-Commerce (Kaggle).
+Используется публичный датасет Olist Brazilian E-Commerce (Kaggle). 
 Данные представлены в нескольких таблицах (orders, order_items, products, customers, payments, reviews).
 
 ## Структура репозитория
