@@ -48,7 +48,7 @@ date_range = st.sidebar.date_input(
 category = st.sidebar.text_input(
     "Категория (точное значение, опционально)",
     value="",
-    help="Оставь пустым, чтобы показать все категории. Пример: beleza_saude",
+    help=" beleza_saude",
 ).strip().lower()
 
 cat_param = category if category else None
