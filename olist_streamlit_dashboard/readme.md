@@ -2,6 +2,7 @@
 
 Интерактивный дашборд продаж на базе DuckDB + Streamlit + Plotly.  
 Автор: <Aslamkhon Kaniev> (GitHub: <https://github.com/AslamkhonK/My-Project-Dashboard>)
+Streamlit link <https://my-project-dashboard-fknf3fycisd4dqerlc223l.streamlit.app/>
 
 ## Описание датасета
 Используется публичный датасет Olist Brazilian E-Commerce (Kaggle). 
