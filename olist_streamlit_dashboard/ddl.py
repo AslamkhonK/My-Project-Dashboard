@@ -11,9 +11,13 @@ from pathlib import Path
 import duckdb
 
 
-DB_PATH = Path("my.db")
-SOURCE_DIR = Path("source")
-QUERIES_DIR = Path("queries")
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+DB_PATH = BASE_DIR / "my.db"
+SOURCE_DIR = BASE_DIR / "source"
+QUERIES_DIR = BASE_DIR / "queries"
+
 
 
 def _read_sql(path: Path) -> str:

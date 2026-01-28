@@ -9,8 +9,12 @@ import duckdb
 import pandas as pd
 
 
-DB_PATH = Path("my.db")
-SQL_PATH = Path("queries/03_queries.sql")
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+DB_PATH = BASE_DIR / "my.db"
+SQL_PATH = BASE_DIR / "queries" / "03_queries.sql"
+
 
 
 def _load_named_queries(sql_text: str) -> dict[str, str]:
