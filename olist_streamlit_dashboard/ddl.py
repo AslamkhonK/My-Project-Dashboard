@@ -1,8 +1,6 @@
 """
 ddl.py
 
-Creates DuckDB tables and loads data from CSV files in /source.
-Also creates SQL views required for analytics.
 """
 
 from __future__ import annotations
@@ -26,14 +24,7 @@ def _read_sql(path: Path) -> str:
 
 
 def load_csv_to_table(con: duckdb.DuckDBPyConnection, csv_path: Path, table_name: str) -> None:
-    """
-    Load a CSV file into an existing DuckDB table.
-
-    Args:
-        con: DuckDB connection.
-        csv_path: Path to CSV file.
-        table_name: Name of the target table.
-    """
+    
     con.execute(
         f"""
         INSERT INTO {table_name}
@@ -44,12 +35,7 @@ def load_csv_to_table(con: duckdb.DuckDBPyConnection, csv_path: Path, table_name
 
 
 def build_db() -> None:
-    """
-    Build local DuckDB database:
-    1) Create empty tables from SQL
-    2) Load CSV data into tables
-    3) Create analytic views
-    """
+    
     con = duckdb.connect(str(DB_PATH))
 
     # 1) Create tables
