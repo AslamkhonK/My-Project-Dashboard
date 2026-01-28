@@ -22,8 +22,3 @@ ssh-keygen -t ed25519 -C "aslamkhonk@gmail.com"
 - Pandas — DataFrame
 - Plotly — визуализации
 - Streamlit — UI/дашборд
-
-## Запуск локально
-1) Установить зависимости:
-```bash
-pip install -r requirements.txt
